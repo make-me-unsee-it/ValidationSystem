@@ -6,7 +6,7 @@ class ValidationSystem {
             Validator<String> validator = new StringValidator();
             validator.validate((String) input);
         }
-        if (input.getClass() == Integer.class) {
+        else if (input.getClass() == Integer.class) {
             Validator<Integer> validator = new IntegerValidator();
             validator.validate((Integer) input);
         }
