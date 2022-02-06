@@ -1,5 +1,7 @@
-package com;
+package com.tests;
 
+import com.exception.ValidationFailedException;
+import com.ValidationSystem;
 import org.junit.Test;
 
 public class ValidationSystemTest {

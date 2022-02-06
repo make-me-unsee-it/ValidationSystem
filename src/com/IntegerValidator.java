@@ -1,5 +1,7 @@
 package com;
 
+import com.exception.ValidationFailedException;
+
 public class IntegerValidator implements Validator<Integer> {
 
     @Override

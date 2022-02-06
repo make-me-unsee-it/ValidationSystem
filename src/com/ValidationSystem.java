@@ -1,14 +1,15 @@
 package com;
 
-class ValidationSystem {
-    static void validate(Object input) throws ValidationFailedException {
-        if (input.getClass() == String.class) {
-            Validator<String> validator = new StringValidator();
-            validator.validate((String) input);
-        }
-        else if (input.getClass() == Integer.class) {
-            Validator<Integer> validator = new IntegerValidator();
-            validator.validate((Integer) input);
-        }
+import com.exception.ValidationFailedException;
+
+public class ValidationSystem {
+    public static void validate(String input) throws ValidationFailedException {
+        Validator<String> validator = new StringValidator();
+        validator.validate(input);
+    }
+
+    public static void validate(Integer input) throws ValidationFailedException {
+        Validator<Integer> validator = new IntegerValidator();
+        validator.validate(input);
     }
 }
