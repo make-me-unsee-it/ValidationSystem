@@ -1,5 +1,5 @@
 package com;
 
-public interface Validator {
-    void validate();
+public interface Validator<T> {
+    void validate(T input) throws ValidationFailedException;
 }
